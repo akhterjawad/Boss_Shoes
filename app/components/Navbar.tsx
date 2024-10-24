@@ -3,6 +3,7 @@ import React from 'react';
 import logo from '../asset/logo.png'; // For logo image
 import roundDivHead from '../asset/roundDivHead.png'; // Import the background image
 import headerLeagShoes from '../asset/headerLeagShoes.png'; // Import the background image
+import hamburger from '../asset/hamburger.png'; // Import the background image
 
 const Navbar = () => {
     return (
@@ -17,7 +18,19 @@ const Navbar = () => {
                     width: '750px', // Full width
                 }}
             >
-                <div className='w-[900px] absolute z-10 h-7 border ml-[50%] bg-transparent ' ></div>
+                <div id='MainDivFirstDiv' className='w-[600px] absolute z-10 h-16 border ml-[100%] bg-opacity-30 backdrop-blur-md  flex items-center justify-around' >
+                    <p className=''>HOME</p>
+                    <p className=''>OUR PRODUCT'S</p>
+                    <p className=''>HOME</p>
+                    <p className=''>HOME</p>
+                    <Image
+                    src={hamburger}
+                    className='' // Positioning using absolute
+                    width={30}
+                    height={30}
+                    alt='logo'
+                />
+                </div>
                 <Image
                     src={logo}
                     className='absolute top-[70px] left-[58px]' // Positioning using absolute
