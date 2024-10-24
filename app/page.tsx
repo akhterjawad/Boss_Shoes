@@ -1,10 +1,12 @@
 import React from 'react'
+import Navbar from './components/Navbar'
 
 const page = () => {
   return (
-    <>
-      <h1>jawad</h1>
-    </>
+    <React.Fragment>
+     <Navbar/>
+
+    </React.Fragment>
   )
 }
 
