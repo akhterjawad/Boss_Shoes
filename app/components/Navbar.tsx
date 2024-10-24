@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import React from 'react';
 import logo from '../asset/logo.png'; // For logo image
-import roundDivHead from '../asset/roundDivHead.png'; // Import the background image
-import headerLeagShoes from '../asset/headerLeagShoes.png'; // Import the background image
-import hamburger from '../asset/hamburger.png'; // Import the background image
+import roundDivHead from '../asset/roundDivHead.png'; 
+import headerLeagShoes from '../asset/headerLeagShoes.png'; 
+import hamburger from '../asset/hamburger.png'; 
 
 const Navbar = () => {
     return (
