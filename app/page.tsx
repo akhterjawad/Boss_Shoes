@@ -7,6 +7,7 @@ import Image from 'next/image';
 import roundDivHead from './asset/roundDivHead.png';
 import headerLeagShoes from './asset/headerLeagShoes.png';
 import leftArrow from './asset/leftarrow.png';
+import rightarrow from './asset/rightarrow.png';
 import yellowshoe from './asset/yellowshoe.png';
 
 const page = () => {
@@ -32,7 +33,7 @@ const page = () => {
           alt='headerLeagShoes'
           style={{}} // Responsive sizing
         />
-        {/* sm:text-[10rem] md:text-[15rem] lg:text-[20rem] xl:text-[25rem] 2xl:text-[30rem] */}
+
         <h1 className=" relative w-ful text-[28vw] bottom-[190px] lg:bottom-[92vh] md:bottom-[40vh]  font-bold text-center">
           BIGAIR
         </h1>
@@ -44,9 +45,9 @@ const page = () => {
         </p>
 
 
-        <div className='absolute left-0 right-0 w-full borde flex items-center justify-around flex-wrap'>
+        <div className='absolute mt-3 left-0 right-0 w-full borde flex gap-5 items-center justify-around flex-wrap'>
 
-          <div className='ml-2 sm:ml-6 '>
+          <div className=' '>
             <Stack spacing={2} direction="row">
               <Button
                 sx={{
@@ -67,12 +68,15 @@ const page = () => {
           </div>
 
 
-          <div className='flex border items-center gap-40 justify-center'>
-            <Image src={leftArrow} width={20} height={20} alt='leftArrow' />
-            <p>01/05</p>
-            <Image src={leftArrow} width={20} height={20} alt='leftArrow' />
+          <div className=' flex  items-center gap-28 sm:gap-40 justify-center'>
+            <Image src={leftArrow} width={20} height={20} alt='leftArrow' className='cursor-pointer' />
+            <div className='flex items-center justify-center '>
+
+              <p className='text-[1.1rem]'>01/ </p><p className=' text-[0.8rem]'>05</p>
+            </div>
+            <Image src={rightarrow} width={20} height={20} alt='rightarrow' className='cursor-pointer' />
           </div>
-          <div className='border flex justify-center   sm:mr-5 mr-2'>
+          <div className=' flex justify-center  '>
             <Image className='borde mr-10' src={yellowshoe} width={150} height={150} alt='yellowshoe' />
             <div className='flex flex-col justify-center w-32 items-center  bg-[rgb(139,201,236)]'>
               <h5 className='text-[0.7rem]'>Our Trending Arivals</h5>
@@ -81,9 +85,9 @@ const page = () => {
               <Stack spacing={2} direction="row">
                 <Button
                   sx={{
-                    width: { sm: '1rem', md: '3rem' },
+                    width: { xs: '3rem', sm: '4rem', md: '5rem' },  // progressively larger sizes
                     color: 'white',
-                    fontSize: { sm: '0.2rem', md: '0.5rem' },
+                    fontSize: { xs: '0.5rem', sm: '0.6rem', md: '0.7rem' },  // progressively larger font sizes
                     borderColor: 'white',
                     '&:hover': {
                       borderColor: 'white',
@@ -95,11 +99,26 @@ const page = () => {
                   Explore
                 </Button>
               </Stack>
+
+
             </div>
           </div>
         </div>
       </div>
+
+
+
       {/* products section */}
+
+
+
+
+      
+
+
+
+
+
 
     </React.Fragment>
   )

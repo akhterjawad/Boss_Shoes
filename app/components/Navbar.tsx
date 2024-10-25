@@ -39,7 +39,7 @@ const Navbar = () => {
                     <Image
                         src={hamburger}
                         id='hamburger'
-                        className="mx-auto inline-block md:hidden w-[10px] h-[10px] sm:w-[20px] sm:h-[20px] md:w-[30px] md:h-[30px]"
+                        className="mx-auto inline-block md:hidden w-[10px] h-[10px] sm:w-[20px] sm:h-[20px] md:w-[30px] md:h-[30px] cursor-pointer"
                         width={300}
                         height={300}
                         alt='hamburger menu'
