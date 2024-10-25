@@ -7,6 +7,7 @@ import Image from 'next/image';
 import roundDivHead from './asset/roundDivHead.png';
 import headerLeagShoes from './asset/headerLeagShoes.png';
 import leftArrow from './asset/leftarrow.png';
+import yellowshoe from './asset/yellowshoe.png';
 
 const page = () => {
   return (
@@ -43,7 +44,7 @@ const page = () => {
         </p>
 
 
-        <div className='absolute left-0 right-0 w-full border flex items-center justify-between flex-wrap'>
+        <div className='absolute left-0 right-0 w-full borde flex items-center justify-around flex-wrap'>
 
           <div className='ml-2 sm:ml-6 '>
             <Stack spacing={2} direction="row">
@@ -66,12 +67,36 @@ const page = () => {
           </div>
 
 
-          <div className='flex items-center justify-center'>
+          <div className='flex border items-center gap-40 justify-center'>
             <Image src={leftArrow} width={20} height={20} alt='leftArrow' />
             <p>01/05</p>
             <Image src={leftArrow} width={20} height={20} alt='leftArrow' />
           </div>
-          <div className='border w-20 h-10 sm:mr-5 mr-2'></div>
+          <div className='border flex justify-center   sm:mr-5 mr-2'>
+            <Image className='borde mr-10' src={yellowshoe} width={150} height={150} alt='yellowshoe' />
+            <div className='flex flex-col justify-center w-32 items-center  bg-[rgb(139,201,236)]'>
+              <h5 className='text-[0.7rem]'>Our Trending Arivals</h5>
+              <p className='text-[0.5rem]'>Lorem ipsum dolor sit amet, </p><p className='text-[0.5rem]'>
+                consectetur adipiscing elit</p>
+              <Stack spacing={2} direction="row">
+                <Button
+                  sx={{
+                    width: { sm: '1rem', md: '3rem' },
+                    color: 'white',
+                    fontSize: { sm: '0.2rem', md: '0.5rem' },
+                    borderColor: 'white',
+                    '&:hover': {
+                      borderColor: 'white',
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                    },
+                  }}
+                  variant="outlined"
+                >
+                  Explore
+                </Button>
+              </Stack>
+            </div>
+          </div>
         </div>
       </div>
       {/* products section */}
