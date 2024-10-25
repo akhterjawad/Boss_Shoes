@@ -7,9 +7,11 @@ import headerLeagShoes from './asset/headerLeagShoes.png';
 const page = () => {
   return (
     <React.Fragment>
-      <Navbar />
+      <Navbar /> {/* navbar */}
+
+      {/* hero section */}
       <div
-        className='relative borde '
+        className='relative border '
         style={{
           backgroundImage: `url(${roundDivHead.src})`, // Background image
           backgroundSize: 'cover', // Adjust to container size
@@ -19,22 +21,30 @@ const page = () => {
           // Max height limit
         }}
       >
-
-
-
         <Image
           src={headerLeagShoes}
-          className='relative z-10   left-[35%] h-auto w-[60vw] sm:w-[50vw] '
+          className=' relative z-10   left-[35%] h-auto w-[65vw] sm:w-[55vw] '
           alt='logo'
-          style={{  }} // Responsive sizing
+          style={{}} // Responsive sizing
         />
         {/* sm:text-[10rem] md:text-[15rem] lg:text-[20rem] xl:text-[25rem] 2xl:text-[30rem] */}
-        <h1 className="relative w-ful text-[28vw] bottom-[100px] lg:bottom-[85vh] text-white font-bold text-center">
-    BIGAIR
-</h1>
-
-
+        <h1 className=" relative w-ful text-[28vw] bottom-[140px] lg:bottom-[95vh]  font-bold text-center">
+          BIGAIR
+        </h1>
+        <h3 className='mt-[-9rem] xl:mt-[-40rem] ml-4 xl:ml-6 text-[1.5rem] xl:text-[2.5rem]'>
+          Walk Like a Boss
+        </h3>
+        <p className='ml-4 md:ml-6 text-sm md:text-base'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </p>
+<div className='flex items-center justify-around'>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
       </div>
+      {/* products section */}
+
     </React.Fragment>
   )
 }

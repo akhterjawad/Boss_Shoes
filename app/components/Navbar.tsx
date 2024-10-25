@@ -20,8 +20,8 @@ const Navbar = () => {
                 // Responsive sizing
                 />
                 <div id='MainDivFirstDiv' className='md:w-[600px] sm:w-[400px] w-[200px] z-20 h-16 bg-[rgb(139,201,236)] bg-opacity-60 backdrop-blur-sm flex items-center justify-between'>
-                    <p className='text-white ml-5 hidden md:inline-block text-sm sm:text-base'>HOME</p>
-                    <p className='text-white hidden md:inline-block text-sm sm:text-base'>OUR PRODUCT'S</p>
+                    <p className=' ml-5 hidden md:inline-block text-sm sm:text-base'>HOME</p>
+                    <p className=' hidden md:inline-block text-sm sm:text-base'>OUR PRODUCT'S</p>
                     <Image
                         src={shoppingBagNavbar}
                         className='hidden md:inline-block'
