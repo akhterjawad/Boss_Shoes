@@ -24,9 +24,9 @@ const page = () => {
 
         <Image
           src={headerLeagShoes}
-          className='relative z-10   left-[30%] '
+          className='relative z-10   left-[35%] h-auto w-[60vw] sm:w-[50vw] '
           alt='logo'
-          style={{ width: '60vw', height: 'auto', maxWidth: '100rem', maxHeight: '40rem' }} // Responsive sizing
+          style={{  }} // Responsive sizing
         />
         {/* sm:text-[10rem] md:text-[15rem] lg:text-[20rem] xl:text-[25rem] 2xl:text-[30rem] */}
         <h1 className="relative w-ful text-[28vw] bottom-[100px] lg:bottom-[85vh] text-white font-bold text-center">
