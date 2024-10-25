@@ -21,17 +21,18 @@ const page = () => {
       >
 
 
-        {/* sm:text-[10rem] md:text-[15rem] lg:text-[20rem] xl:text-[25rem] 2xl:text-[30rem] */}
-        {/* <h1 className="absolute text-[2500%]  top-10 sm:top-16 md:top-24 text-white font-bold">
-          BIGAIR
-        </h1> */}
 
         <Image
           src={headerLeagShoes}
-          className='absolute top-[-10%] sm:top-[-5%] md:top-[-30px] left-[10%] sm:left-[15%] md:left-[300px]'
+          className='relative z-10   left-[30%] '
           alt='logo'
           style={{ width: '60vw', height: 'auto', maxWidth: '100rem', maxHeight: '40rem' }} // Responsive sizing
         />
+        {/* sm:text-[10rem] md:text-[15rem] lg:text-[20rem] xl:text-[25rem] 2xl:text-[30rem] */}
+        <h1 className="relative w-ful text-[28vw] bottom-[100px] lg:bottom-[85vh] text-white font-bold text-center">
+    BIGAIR
+</h1>
+
 
       </div>
     </React.Fragment>
