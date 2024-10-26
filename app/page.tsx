@@ -2,7 +2,6 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Navbar from './components/Navbar'
 import Image from 'next/image';
 import roundDivHead from './asset/roundDivHead.png';
 import headerLeagShoes from './asset/headerLeagShoes.png';
@@ -10,16 +9,21 @@ import leftArrow from './asset/leftarrow.png';
 import rightarrow from './asset/rightarrow.png';
 import yellowshoe from './asset/yellowshoe.png';
 import deliverybox from './asset/deliverybox.png';
+import Navbar from './components/Navbar';
 
 const page = () => {
   return (
     <React.Fragment>
-      <Navbar /> {/* navbar */}
+      <div className='absolute w-full top-1'>
+        <Navbar />
+      </div>
 
-      {/* hero section */}
-      <div style={{
+
+      {/* hero,main section */}
+      <main style={{
         position: 'relative',
-        height: '300vh',
+        // height: '1000px',
+        marginTop: '-20px',
         width: 'full',
       }}>
         <div style={{
@@ -27,11 +31,11 @@ const page = () => {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'right',
-          height: '60%',
+          height: '100%',
           width: '40%',
-          opacity: 0.5, // Adjust opacity of the image
+          // opacity: 0.5, // Adjust opacity of the image
           position: 'absolute',
-          top: -0,
+          top: 20,
           left: 0,
         }}></div>
         <Image
@@ -112,11 +116,11 @@ const page = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-around gap-5 mt-44 sm:mt-40 flex-wrap  py-8">
+        <div className="flex items-center justify-around gap-5 mt-48 sm:mt-40 flex-wrap  py-8">
 
           {/* Free Shipping Section */}
-          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 w-[350.56px]">
-            <Image src={deliverybox} width={20} height={20} alt="deliverybox" />
+          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 ">
+            <Image src={deliverybox} width={40} height={40} alt="deliverybox" />
             <div className="flex flex-col items-start justify-center gap-1 text-center">
               <p className="font-semibold">Free Shipping Worldwide</p>
               <p>Tell us about your service</p>
@@ -124,8 +128,8 @@ const page = () => {
           </div>
 
           {/* Money Back Guarantee Section */}
-          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 w-[350.56px]">
-            <Image src={deliverybox} width={20} height={20} alt="moneyback" />
+          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 ">
+            <Image src={deliverybox} width={40} height={40} alt="moneyback" />
             <div className="flex flex-col items-start justify-center gap-1 text-center">
               <p className="font-semibold">Money Back Guarantee</p>
               <p>Within 30 Days for an Exchange</p>
@@ -133,8 +137,8 @@ const page = () => {
           </div>
 
           {/* Online Support Section */}
-          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 w-[350.56px]">
-            <Image src={deliverybox} width={20} height={20} alt="support" />
+          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 ">
+            <Image src={deliverybox} width={40} height={40} alt="support" />
             <div className="flex flex-col items-start justify-center gap-1 text-center">
               <p className="font-semibold">Online Support</p>
               <p>24 Hours a Day, 7 Days a Week</p>
@@ -143,21 +147,9 @@ const page = () => {
         </div>
 
 
-      </div>
 
 
-
-      {/* products section */}
-
-
-
-
-
-
-
-
-
-
+      </main>
 
     </React.Fragment>
   )
