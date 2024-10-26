@@ -16,20 +16,26 @@ const page = () => {
       <Navbar /> {/* navbar */}
 
       {/* hero section */}
-      <div
-        className=''
-        style={{
-          backgroundImage: `url(${roundDivHead.src})`, // Background image
-          backgroundSize: 'cover', // Adjust to container size
-          backgroundPosition: 'right', // Align right
-          height: '400vh', // Full height relative to the viewport
-          width: '72vw', // Full width relative to the viewport
-          // Max height limit
-        }}
-      >
+      <div style={{
+        position: 'relative',
+        height: '300vh',
+        width: 'full',
+      }}>
+        <div style={{
+          backgroundImage: `url(${roundDivHead.src})`,
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'right',
+          height: '60%',
+          width: '40%',
+          opacity: 0.5, // Adjust opacity of the image
+          position: 'absolute',
+          top: -0,
+          left: 0,
+        }}></div>
         <Image
           src={headerLeagShoes}
-          className=' relative z-10   left-[35%] h-auto w-[65vw] sm:w-[55vw] '
+          className=' relative z-10   left-[24%] h-auto w-[65vw] sm:w-[55vw] '
           alt='headerLeagShoes'
           style={{}} // Responsive sizing
         />
@@ -113,7 +119,7 @@ const page = () => {
 
 
 
-      
+
 
 
 
