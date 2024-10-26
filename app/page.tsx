@@ -9,6 +9,7 @@ import headerLeagShoes from './asset/headerLeagShoes.png';
 import leftArrow from './asset/leftarrow.png';
 import rightarrow from './asset/rightarrow.png';
 import yellowshoe from './asset/yellowshoe.png';
+import deliverybox from './asset/deliverybox.png';
 
 const page = () => {
   return (
@@ -110,6 +111,38 @@ const page = () => {
             </div>
           </div>
         </div>
+
+        <div className="flex items-center justify-around gap-5 mt-44 sm:mt-40 flex-wrap  py-8">
+
+          {/* Free Shipping Section */}
+          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 w-[350.56px]">
+            <Image src={deliverybox} width={20} height={20} alt="deliverybox" />
+            <div className="flex flex-col items-start justify-center gap-1 text-center">
+              <p className="font-semibold">Free Shipping Worldwide</p>
+              <p>Tell us about your service</p>
+            </div>
+          </div>
+
+          {/* Money Back Guarantee Section */}
+          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 w-[350.56px]">
+            <Image src={deliverybox} width={20} height={20} alt="moneyback" />
+            <div className="flex flex-col items-start justify-center gap-1 text-center">
+              <p className="font-semibold">Money Back Guarantee</p>
+              <p>Within 30 Days for an Exchange</p>
+            </div>
+          </div>
+
+          {/* Online Support Section */}
+          <div className="border rounded-lg p-10 bg-[rgb(139,201,236)] flex items-center gap-5 mx-2 w-[350.56px]">
+            <Image src={deliverybox} width={20} height={20} alt="support" />
+            <div className="flex flex-col items-start justify-center gap-1 text-center">
+              <p className="font-semibold">Online Support</p>
+              <p>24 Hours a Day, 7 Days a Week</p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
 
 
