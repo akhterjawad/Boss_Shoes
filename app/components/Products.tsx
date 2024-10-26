@@ -9,7 +9,6 @@ const Products = () => {
       <div className="relative mt-20 z-10 flex flex-wrap justify-around items-center gap-4">
           <div className="rounded-2xl pb-10 bg-gradient-to-b from-[rgb(119,192,233)] to-[rgb(150,205,236)] flex flex-col items-center gap-3 shadow-sm">
             <div className='h-48  flex items-center justify-center '>
-
             <Image src={yellowshoe} alt="Yellow Shoe" width={300} height={300} className="rounded-xl" />
             </div>
             <h5 className="text-2xl self-start ml-[50px] font-bold">Green AIR</h5>
