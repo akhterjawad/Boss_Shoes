@@ -378,6 +378,7 @@ const page = () => {
 
 
       </div>
+      
         {/* <div id='product' className='border mx-auto bg-black'> */}
           <Footer />
         {/* </div> */}
