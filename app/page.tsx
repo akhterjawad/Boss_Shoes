@@ -12,8 +12,10 @@ import deliverybox from './asset/deliverybox.png';
 import productBackRoundImag from './asset/productBackRoundImag.png';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import shoppingBagNavbar from './asset/navSearchIcon.png';
+import shoppingBagNavbar from './asset/shoppingBagNavbar.png';
+import rotatediv from './asset/rotatediv.png';
 import Products from './components/Products';
+import singleProductShoe from './asset/singleProductShoe.png';
 
 
 const page = () => {
@@ -169,12 +171,12 @@ const page = () => {
       </div>
 
       {/* Product Section with Background Image */}
-      <div className="relative w-full h-[260vh] ">
+      <div className="relative w-full h-[277vh ">
         {/* Background image positioned absolutely within the relative container */}
         <div className='ml-[10%] w-full  '
           style={{
             backgroundImage: `url(${productBackRoundImag.src})`,
-            backgroundSize: '100% auto',
+            backgroundSize: '80% auto',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'right',
             height: '126%',
@@ -189,11 +191,196 @@ const page = () => {
         <Products />
 
 
-      </div>
+        <div className="flex items-center mt-16 flex-col gap-3 justify-center">
+          <h4 className="text-4xl font-semibold">Our Product Quality</h4>
+          <div className="border w-32"></div>
+        </div>
 
-      {/* <div id='product'>
-        <Footer />
-      </div> */}
+
+        {/* <div className="mt-10 flex flex-wrap items-center justify-around">
+          <div className="">
+            <div className=" p-2  flex items-center space-x-3">
+              <div className="flex items-center justify-center p-2 rounded-xl border">
+                <Image src={shoppingBagNavbar} width={20} height={20} alt='shoppingBagNavbar' />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold ">Best Quality Shoes</h3>
+                <p className="text-sm text-gray-100">Lorem ipsum dolor sit amet,</p>
+                <p className="text-sm text-gray-100"> consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div className=" p-2  flex items-center space-x-3">
+              <div className="flex items-center justify-center p-2 rounded-xl border">
+                <Image src={shoppingBagNavbar} width={20} height={20} alt='shoppingBagNavbar' />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold ">Long Lasting</h3>
+                <p className="text-sm text-gray-100">Lorem ipsum dolor sit amet,</p>
+                <p className="text-sm text-gray-100"> consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div className=" p-2  flex items-center space-x-3">
+              <div className="flex items-center justify-center p-2 rounded-xl border">
+                <Image src={shoppingBagNavbar} width={20} height={20} alt='shoppingBagNavbar' />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold ">Best Value</h3>
+                <p className="text-sm text-gray-100">Lorem ipsum dolor sit amet,</p>
+                <p className="text-sm text-gray-100"> consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div className='relative flex items-center justify-center'>
+            {/* Background Circle */}
+        {/* <div style={{ transform: 'scale(1.5) rotate(-15deg)' }} className='absolute w-72 h-72 bg-gradient-to-b from-blue-500 to-[#77C0E9] rounded-full z-0'></div> */}
+
+
+        {/* Image */}
+        {/* <Image
+              src={singleProductShoe}
+              className='mb-10 relative z-10 -rotate15'
+              width={350}
+              height={350}
+              alt='singleProductShoe'
+              style={{ transform: 'scale(1.5) rotate(-15deg)' }}
+            />
+          </div>
+        </div> */}
+
+
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-around ">
+          <div className="space-y-4 md:space-y-6">
+            {/* Feature 1 */}
+            <div className="p-2 flex items-center space-x-3">
+              <div className="flex items-center justify-center p-2 rounded-xl border">
+                <Image src={shoppingBagNavbar} width={20} height={20} alt="shoppingBagNavbar" />
+              </div>
+              <div>
+                <h3 className="text-base md:text-lg font-semibold">Best Quality Shoes</h3>
+                <p className="text-xs md:text-sm text-gray-100">Lorem ipsum dolor sit amet,</p>
+                <p className="text-xs md:text-sm text-gray-100">consectetur adipiscing elit.</p>
+              </div>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="p-2 flex items-center space-x-3">
+              <div className="flex items-center justify-center p-2 rounded-xl border">
+                <Image src={shoppingBagNavbar} width={20} height={20} alt="shoppingBagNavbar" />
+              </div>
+              <div>
+                <h3 className="text-base md:text-lg font-semibold">Long Lasting</h3>
+                <p className="text-xs md:text-sm text-gray-100">Lorem ipsum dolor sit amet,</p>
+                <p className="text-xs md:text-sm text-gray-100">consectetur adipiscing elit.</p>
+              </div>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="p-2 flex items-center space-x-3">
+              <div className="flex items-center justify-center p-2 rounded-xl border">
+                <Image src={shoppingBagNavbar} width={20} height={20} alt="shoppingBagNavbar" />
+              </div>
+              <div>
+                <h3 className="text-base md:text-lg font-semibold">Best Value</h3>
+                <p className="text-xs md:text-sm text-gray-100">Lorem ipsum dolor sit amet,</p>
+                <p className="text-xs md:text-sm text-gray-100">consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+
+
+          {/* Product Image Section */}
+          <div className="relative flex items-center justify-center mt-10 md:mt-0">
+            {/* Background Circle */}
+            <div className="absolute w-40 h-40 sm:w-60 sm:h-60 md:w-72 md:h-72 bg-gradient-to-b from-blue-500 to-[#77C0E9] rounded-full z-0"></div>
+
+            {/* Product Image */}
+            <Image
+              src={singleProductShoe}
+              className="relative z-10"
+              width={450}
+              height={450}
+              alt="singleProductShoe"
+              style={{ transform: 'rotate(-15deg)' }}
+            />
+          </div>
+        </div>
+        {/* <div className=" bg-blue-200 bg-opacity-30 backdrop-filter  -rotate-45 w-[519.55px] h-[3000.05px] absolute   z-[0] " style={{ top: '1000px', right: '-220px' }}>
+        </div> */}
+
+      </div>
+      <div>
+        <div className="bg-[#77C0E9]  w-full min-h-screen   justify-center items-start p-4 sm:p-10 z-[10]">
+
+          <div className=' w-full  '
+            style={{
+              backgroundImage: `url(${rotatediv.src})`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'right',
+              height: '170%',
+              position: 'absolute',
+              top: 2800,
+              right: 100,
+            }}
+          ></div>
+
+
+          <div className="text-center  z-2">
+            <h1 className="text-white text-2xl sm:text-3xl font-bold leading-tight z-10">
+              What Our Happy
+              <br />
+              Customer Says
+            </h1>
+          </div>
+          <hr className="w-32  mx-auto mt-5" />
+          <div className="text-center mt-5">
+            <h1 className="text-white text-lg sm:text-xl font-bold leading-tight">
+              We value our customers' feedback and strive to
+              provide the best experience possible.
+              <br />
+              Here's what our happy customers have to say
+            </h1>
+          </div>
+
+          <div className="flex flex-col md:flex-row text-white justify-around items-center gap-8 md:gap-20 mt-10 md:mt-20">
+            <div className="bg-blue-200 bg-opacity-30 backdrop-filter backdrop-blur-md w-full md:w-1/3 h-auto md:h-60 rounded-2xl p-5">
+              <div className="flex justify-between items-center mb-4">
+                <img src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=0&k=20&c=NtM9Wbs1DBiGaiowsxJY6wNCnLf0POa65rYEwnZymrM=" alt="testimonial" className="w-12 h-12 rounded-full cursor-pointer hover:scale-110 transition-all duration-300" />
+                <img src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-message-icon-for-your-project-png-image_5214044.jpg" alt="testimonial" className="w-10 h-10 rounded-full cursor-pointer hover:scale-110 transition-all duration-300" />
+              </div>
+              <p className="text-sm font-semibold mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </p>
+              <div className="mt-auto">
+                <h2 className="text-xl font-bold">John Doe</h2>
+                <p className="text-sm">CEO, Company Name</p>
+              </div>
+            </div>
+            <div className="bg-white bg-opacity-30 backdrop-filter backdrop-blur-md w-full md:w-1/3 h-auto md:h-60 rounded-2xl p-5">
+              <div className="flex justify-between items-center mb-4">
+                <img src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=0&k=20&c=NtM9Wbs1DBiGaiowsxJY6wNCnLf0POa65rYEwnZymrM=" alt="testimonial" className="w-12 h-12 rounded-full cursor-pointer hover:scale-110 transition-all duration-300" />
+                <img src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-message-icon-for-your-project-png-image_5214044.jpg" alt="testimonial" className="w-10 h-10 rounded-full cursor-pointer hover:scale-110 transition-all duration-300" />
+              </div>
+              <p className=" text-sm font-semibold mb-6">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </p>
+              <div className="mt-auto">
+                <h2 className=" text-xl font-bold">John Doe</h2>
+                <p className=" text-sm">CEO, Company Name</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+        {/* <div id='product' className='border mx-auto bg-black'> */}
+          <Footer />
+        {/* </div> */}
     </React.Fragment>
   )
 }

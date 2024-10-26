@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import logo from '../asset/logo.png'; // For logo image
 import hamburger from '../asset/hamburger.png';
-import  shoppingBagNavbar from '../asset/NavSearchIcons.png';
+import shoppingBagNavbar from '../asset/shoppingBagNavbar.png';
 import searchIconImage from '../asset/navSearchIcon.png';
 import Link from 'next/link';
 

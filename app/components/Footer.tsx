@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <React.Fragment>
             {/* Footer section */}
-            <footer className="bg-black w-full py-8 sm:py-12 z-1 absolute">
+            <footer className="bg-black z-0 relative bottom-0 border  w-full py-6 sm:py-10 ">
                 {/* Logo */}
                 <div className="flex justify-center items-center text-wrap mb-6 sm:mb-10">
                     <div className="leading-tight  ">

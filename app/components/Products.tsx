@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
-import searchIconImage from '../asset/navSearchIcon.png';
+import shoppingBagNavbar from '../asset/shoppingBagNavbar.png';
+
 import yellowshoe from '../asset/yellowshoe.png';
 
 const Products = () => {
@@ -20,7 +21,7 @@ const Products = () => {
             <div className="flex items-center justify-evenly  w-full">
               <p className="text-xl font-semibold">Rs. 1,20,000</p>
               <div className="p-2 rounded-xl border-2">
-                <Image src={searchIconImage} alt="Shopping Bag" width={15} height={15} />
+                <Image src={shoppingBagNavbar} alt="Shopping Bag" width={20} height={15} />
               </div>
             </div>
           </div>
@@ -38,7 +39,7 @@ const Products = () => {
             <div className="flex items-center justify-evenly  w-full">
               <p className="text-xl font-semibold">Rs. 1,20,000</p>
               <div className="p-2 rounded-xl border-2">
-                <Image src={searchIconImage} alt="Shopping Bag" width={15} height={15} />
+                <Image src={shoppingBagNavbar} alt="Shopping Bag" width={20} height={15} />
               </div>
             </div>
           </div>
@@ -56,7 +57,7 @@ const Products = () => {
             <div className="flex items-center justify-evenly  w-full">
               <p className="text-xl font-semibold">Rs. 1,20,000</p>
               <div className="p-2 rounded-xl border-2">
-                <Image src={searchIconImage} alt="Shopping Bag" width={15} height={15} />
+                <Image src={shoppingBagNavbar} alt="Shopping Bag" width={20} height={15} />
               </div>
             </div>
           </div>
