@@ -2,14 +2,14 @@ import Image from 'next/image';
 import React from 'react';
 import logo from '../asset/logo.png'; // For logo image
 import hamburger from '../asset/hamburger.png';
-import searchIconImage from '../asset/NavSearchIcons.png';
-import shoppingBagNavbar from '../asset/navSearchIcon.png';
+import  shoppingBagNavbar from '../asset/NavSearchIcons.png';
+import searchIconImage from '../asset/navSearchIcon.png';
 import Link from 'next/link';
 
 const Navbar = () => {
     return (
         <React.Fragment>
-            <nav className='borde sm:py-[50px] py-[20px] flex items-center justify-between '>
+            <nav className=' sm:py-[50px] py-[20px] flex items-center justify-between absolute w-full top-1'>
                 <Image
                     src={logo} // main logo
                     className='sm:ml-[49px] ml-[30px] mr-5 sm:w-[96.41px] sm:h-[33px] w-[50px] h-[20.96px]' // Responsive positioning
@@ -19,10 +19,10 @@ const Navbar = () => {
                 // Responsive sizing
                 />
                 <div id='MainDivFirstDiv' className='md:w-[600px] sm:w-[400px] w-[100px] z-20 sm:h-16 h-10 bg-[rgb(139,201,236)] bg-opacity-60 backdrop-blur-sm flex items-center justify-between'>
-                    <Link href={'/'}>
+                    <Link href={'#home'}>
                         <p className=' ml-5 hidden md:inline-block text-sm sm:text-base cursor-pointer '>HOME</p>
                     </Link>
-                    <Link href={'/products'}>
+                    <Link href={'#product'}>
                         <p className='  cursor-pointer hidden md:inline-block text-sm sm:text-base'>OUR PRODUCT'S</p>
                     </Link>
                     <Image
